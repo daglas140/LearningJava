@@ -14,7 +14,7 @@ public class Company {
 		System.out.println("Szef ma na imie: " + szef.name);
 		System.out.println("Jego nazwisko to: " + szef.surname);
 		System.out.println("Wynagrodzenie + premia: " + (szef.salary + szef.premia));
-		System.out.println("Premia miesiêczna: " + szef.premia);
+		System.out.println("Premia miesieczna: " + szef.premia);
 		System.out.println("Wiek: " + szef.age);
 		System.out.println("Jest szefem departamentu: " + szef.departament);
 	}
