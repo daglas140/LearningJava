@@ -1,5 +1,22 @@
 
 public class Boss extends Employer{
-	int premia;
-	String departament;
+	public int premia;
+	private String departament;
+
+	public Boss(String name, String surname, int age, int year, int month, int day, int salary, int premia, String departament) {
+		this.premia = premia;
+		this.departament = departament;
+	}
+
+	public int getPremia(){
+		return premia;
+	}
+
+	public String getDepartament(){
+		return departament;
+	}
+
+	public int getBossSalary(){
+		return getSalary() + getPremia();
+	}
 }
