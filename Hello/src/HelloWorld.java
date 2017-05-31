@@ -10,6 +10,7 @@ public class HelloWorld {
 		imie = odczyt.nextLine();
 		
 		System.out.println("System wita " + imie);
+		System.out.println("Do widzenia");
 	}
 
 }
