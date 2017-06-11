@@ -23,7 +23,7 @@ public class Firma {
 		System.out.printf("Pracownik trzy: %s %s lat %d.", pracownicy[2].imie, pracownicy[2].nazwisko, pracownicy[2].wiek);
 		
 		int a = 6;
-		Pracownik.zwieksz(a); // Statyczne metody nie potrzebuj¹ tworzenia obiektu klasy.
+		Pracownik.zwieksz(a); // Statyczne metody nie potrzebuj? tworzenia obiektu klasy.
 		System.out.println(a);
 	}
 

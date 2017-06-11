@@ -4,6 +4,7 @@ public class Boss extends Employer{
 	private String departament;
 
 	public Boss(String name, String surname, int age, int year, int month, int day, int salary, int premia, String departament) {
+		super(name, surname, age, year, month, day, salary);
 		this.premia = premia;
 		this.departament = departament;
 	}

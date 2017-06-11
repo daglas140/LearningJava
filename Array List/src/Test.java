@@ -3,29 +3,45 @@ import java.util.List;
  
 public class Test{
     public static void main(String[] args){
-        //tworzymy liste
+        //tworzymy listy
         List<String> lista = new ArrayList<String>();
-        //dodajemy elementy typu Object - czyli dowolne, my dodamy ci¹gi znaków
+        List<Uczniowie>dziennik = new ArrayList<Uczniowie>();
+
+        //dodajemy elementy typu Object - czyli dowolne, my dodamy ciï¿½gi znakï¿½w
         lista.add("Asia");
         lista.add("Basia");
         lista.add("Krzysiek");
         lista.add("Wojtek");
- 
+
+        //Tworzymy obiekty,ktÃ³re testowo dodam do listy
+        Uczniowie uczen1 = new Uczniowie();
+        Uczniowie uczen2 = new Uczniowie(1,"Jan", "Kowalski");
+        Uczniowie uczen3 = new Uczniowie(2, "Jakub", "Mazowiecki");
+
+        //Dodajemy obiekty do listy
+        dziennik.add(uczen1);
+        dziennik.add(uczen2);
+        dziennik.add(uczen3);
+
         //sprawdzamy rozmiar listy
-        System.out.println("Rozmiar listy to: "+lista.size());
+        System.out.println("Rozmiar listy LISTA to: "+lista.size());
+        System.out.println("Rozmiar listy DZIENNIK to:" + dziennik.size());
  
         //usuwamy obiekt "Asia" i sprawdzamy rozmiar
         lista.remove("Asia");
         System.out.println("Rozmiar listy to: "+lista.size());
  
-        //usuwamy obiekt zajmuj¹cy 2 miejsce, czyli o indeksie 1 - u nas "Krzysiek"
+        //usuwamy obiekt zajmujï¿½cy 2 miejsce, czyli o indeksie 1 - u nas "Krzysiek"
         lista.remove(1);
         System.out.println("Rozmiar listy to: "+lista.size());
  
-        //na koniec przypiszmy pierwszy element listy zmiennej imie i wyœwietlmy go
-        //musimy u¿yæ rzutowania, poniewa¿ inaczej próbowalibyœmy przypisaæ Object do String
+        //na koniec przypiszmy pierwszy element listy zmiennej imie i wyï¿½wietlmy go
+        //musimy uï¿½yï¿½ rzutowania, poniewaï¿½ inaczej prï¿½bowalibyï¿½my przypisaï¿½ Object do String
         String imie = (String)lista.get(0);
-        System.out.println("Pierwszy element listy to: "+imie);
+        System.out.println("Pierwszy element listy to: "+ imie);
+
+        System.out.println(dziennik.toString());
+
  
     }
 }
